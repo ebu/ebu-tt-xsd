@@ -22,3 +22,8 @@ This schema depends on the w3c/ebu-tt-m-xsd repository and imports it via a git 
 
 If cloning from the command line make sure to include the `--recurse-submodules` option,
 or after cloning run `git submodule init` then `git submodule update`.
+
+## Style guide
+
+If either the `minOccurs` or `maxOccurs` attributes on an element do not have their default value of 1,
+_both_ attribtues should be specified.
