@@ -336,6 +336,7 @@ Please note that the EBU-TT XML Schema is a helping document and NOT normative b
 		<xs:sequence>
 		    <xs:element name="metadata" type="ebuttm:anyMetadata_type" minOccurs="0" maxOccurs="1"/>
 		</xs:sequence>
+		<xs:attribute ref="ttm:agent"/>
 		<xs:attribute ref="ttm:role"/>
 	</xs:complexType>
 	<xs:complexType name="tt_type">
