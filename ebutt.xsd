@@ -109,7 +109,7 @@ Please note that the EBU-TT XML Schema is a helping document and NOT normative b
 		<xs:sequence>
 		    <xs:element name="metadata" type="ebuttm:anyMetadata_type" minOccurs="0" maxOccurs="1"/>
 		</xs:sequence>
-		<xs:attribute name="style" type="xs:IDREFS" use="optional">
+		<xs:attribute name="style" type="xs:IDREFS">
 			<xs:annotation>
 				<xs:documentation>ID(s) of one or more style element(s).</xs:documentation>
 			</xs:annotation>
@@ -119,7 +119,7 @@ Please note that the EBU-TT XML Schema is a helping document and NOT normative b
 				<xs:documentation>ID of a region.</xs:documentation>
 			</xs:annotation>
 		</xs:attribute>
-		<xs:attribute ref="tts:displayAlign" use="optional"/>
+		<xs:attribute ref="tts:displayAlign"/>
 		<xs:attribute ref="tts:extent" use="required">
 			<xs:annotation>
 				<xs:documentation>Width and height of a region area. Values in percentage shall be
@@ -181,13 +181,13 @@ Please note that the EBU-TT XML Schema is a helping document and NOT normative b
 				<xs:element name="p" type="tt:p_type"/>
 			</xs:choice>
 		</xs:sequence>
-		<xs:attribute name="begin" type="ebuttdt:timingType" use="optional">
+		<xs:attribute name="begin" type="ebuttdt:timingType">
 			<xs:annotation>
 				<xs:documentation>Start point of a temporal interval associated with a tt:div
 					element.</xs:documentation>
 			</xs:annotation>
 		</xs:attribute>
-		<xs:attribute name="end" type="ebuttdt:timingType" use="optional">
+		<xs:attribute name="end" type="ebuttdt:timingType">
 			<xs:annotation>
 				<xs:documentation>End point of a temporal interval associated with a tt:div
 					element.</xs:documentation>
