@@ -26,7 +26,7 @@ or after cloning run `git submodule init` then `git submodule update`.
 ## Style guide
 
 If either the `minOccurs` or `maxOccurs` attributes on an element do not have their default value of 1,
-_both_ attribtues should be specified.
+_both_ attributes should be specified.
 
 The `use` attribute should only be specified when its value is `required` - in all other
 cases the default `optional` value applies and does not need to be specified.
