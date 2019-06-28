@@ -372,7 +372,7 @@ Please note that the EBU-TT XML Schema is a helping document and NOT normative b
 		<xs:attribute ref="ttp:frameRate"/>
 		<xs:attribute ref="ttp:frameRateMultiplier"/>
 		<xs:attribute ref="ttp:markerMode"/>
-		<xs:attribute ref="ttp:timeBase"/>
+		<xs:attribute ref="ttp:timeBase" use="required"/>
 	</xs:complexType>
 	<xs:element name="tt" type="tt:tt_type"/>
 </xs:schema>
